@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service — AniSpotter</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5a5a5a;
+    --link: #0a5fb0;
+    --border: #e2e2e2;
+    --mark-bg: #fff3a3;
+    --mark-fg: #1a1a1a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --fg: #eaeaea;
+      --muted: #a3a3a3;
+      --link: #6db4ff;
+      --border: #2c2f36;
+      --mark-bg: #7a6300;
+      --mark-fg: #fff6d1;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+    padding: 2.5rem 1.25rem 4rem;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.9rem;
+    margin-bottom: 0.25rem;
+    line-height: 1.25;
+  }
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--border);
+  }
+  h3 {
+    font-size: 1.05rem;
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    margin: 0.9rem 0;
+  }
+  ul {
+    margin: 0.9rem 0;
+    padding-left: 1.4rem;
+  }
+  li {
+    margin: 0.35rem 0;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  a {
+    color: var(--link);
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  mark {
+    background: var(--mark-bg);
+    color: var(--mark-fg);
+    padding: 0.05em 0.3em;
+    border-radius: 3px;
+    font-weight: 600;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 3rem 0 1.5rem;
+  }
+  footer {
+    max-width: 680px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  footer a {
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Terms of Service</h1>
+  <p class="updated"><strong>Last updated: August 3, 2026</strong></p>
+
+  <h2>Introduction</h2>
+  <p>These Terms of Service ("Terms") govern your use of the AniSpotter mobile application ("App"). By downloading, installing, or using AniSpotter, you agree to these Terms. If you do not agree, do not use the App.</p>
+  <p>For questions or support, contact <strong>support@anispotter.app</strong>.</p>
+
+  <h2>1. Eligibility</h2>
+  <p>You must be at least 13 years old to use AniSpotter. By using the App, you represent that you meet this requirement. We do not knowingly collect data from or provide services to anyone under 13. If we learn that a user is under 13, we will delete their account and data immediately.</p>
+
+  <h2>2. Account Registration</h2>
+  <p>To use AniSpotter, you must create an account by providing:</p>
+  <ul>
+    <li>Email address and password, OR</li>
+    <li>Sign in with Apple, OR</li>
+    <li>Google sign-in</li>
+  </ul>
+  <p>You are responsible for maintaining the confidentiality of your login credentials. You agree to provide accurate information and notify us immediately of any unauthorized access.</p>
+
+  <h2>3. Your Sightings and Content</h2>
+
+  <h3>Your Submissions</h3>
+  <p>When you submit a wildlife sighting to AniSpotter, you own the photo and metadata (species, timestamp, location). By submitting, you grant AniSpotter a non-exclusive license to:</p>
+  <ul>
+    <li>Display sightings on the public map and in leaderboards (with fuzzed coordinates and your username/points visible)</li>
+    <li>Use sightings for service improvement and analytics</li>
+    <li>Store sightings in our database</li>
+  </ul>
+
+  <h3>User Content Standards</h3>
+  <p>You agree NOT to submit content that:</p>
+  <ul>
+    <li>Contains harassment, threats, hate speech, or discriminatory language</li>
+    <li>Is illegal or promotes illegal activity</li>
+    <li>Depicts illegal animal capture, trafficking, or harm to protected species</li>
+    <li>Shows disturbing wildlife harassment or animal cruelty</li>
+    <li>Is spam, misleading, or false information</li>
+    <li>Violates anyone's intellectual property or privacy rights</li>
+    <li>Is sexually explicit or obscene</li>
+  </ul>
+  <p><strong>Zero-tolerance policy:</strong> AniSpotter has a zero-tolerance policy for objectionable content, including harassment, hate speech, and content depicting animal cruelty. Violations may result in immediate account suspension or removal.</p>
+
+  <h3>Photo Privacy</h3>
+  <ul>
+    <li>Photos submitted for species identification are sent to Anthropic's Claude API for processing</li>
+    <li>Photos are stored on our server and associated with your account</li>
+    <li>You can delete your account to remove all photos you submitted</li>
+  </ul>
+
+  <h2>4. Public Map and Privacy</h2>
+
+  <h3>Coordinate Fuzzing</h3>
+  <p>AniSpotter's public map displays only fuzzed (coarsened) location coordinates. Exact coordinates are stored server-side but never shown to other users.</p>
+
+  <h3>Sensitive Species</h3>
+  <p>Sensitive or protected species may be further coarsened or hidden from the public map to protect wildlife.</p>
+
+  <h3>Home Privacy Zone</h3>
+  <p>You can define a home privacy zone on your device. Sightings within this zone:</p>
+  <ul>
+    <li>Are never uploaded to our servers</li>
+    <li>Never appear on the public map</li>
+    <li>Remain on your device only</li>
+  </ul>
+
+  <h2>5. Identification Service</h2>
+
+  <h3>How It Works</h3>
+  <p>When you submit a photo for species identification, AniSpotter sends it (along with optional location and date context) to Anthropic's Claude API. Identification results are logged for service improvement.</p>
+
+  <h3>Usage Limits</h3>
+  <p>The free tier includes <strong>10 identifications per month</strong>, enforced server-side. This limit applies to each account.</p>
+
+  <h3>Service Quality</h3>
+  <p>AniSpotter makes no guarantee that identifications are accurate. Always verify results and consult wildlife experts or field guides for critical decisions.</p>
+
+  <h2>6. Social Features</h2>
+
+  <h3>Usernames and Profiles</h3>
+  <p>Your username, points, and streaks are visible to other users on:</p>
+  <ul>
+    <li>Public sightings you submit</li>
+    <li>Leaderboards and rankings</li>
+    <li>Friend profiles</li>
+  </ul>
+
+  <h3>Friend Requests</h3>
+  <p>Users can send you friend requests using your username. You can accept or decline requests in-app.</p>
+
+  <h3>Blocking</h3>
+  <p>You can block other users in-app. Blocking is:</p>
+  <ul>
+    <li>Device-local (filters content in your view)</li>
+    <li>Server-side (prevents blocked users from sending friend requests)</li>
+  </ul>
+
+  <h2>7. Moderation and Reporting</h2>
+
+  <h3>User Reports</h3>
+  <p>You can report sightings for:</p>
+  <ul>
+    <li>Wrong species identification</li>
+    <li>Spam or misleading content</li>
+    <li>Harassment or inappropriate behavior</li>
+    <li>Illegal activity or animal cruelty</li>
+    <li>Other violations of these Terms</li>
+  </ul>
+
+  <h3>Automatic Moderation</h3>
+  <p>Sightings with multiple reports are automatically hidden from the public map pending review.</p>
+
+  <h3>Moderator Actions</h3>
+  <p>AniSpotter moderators may:</p>
+  <ul>
+    <li>Remove content that violates these Terms</li>
+    <li>Suspend or permanently remove accounts</li>
+    <li>Retain an audit log of moderation actions (account identifiers may be retained even after account deletion)</li>
+  </ul>
+
+  <h3>No Liability for Delays</h3>
+  <p>AniSpotter is not liable for delays in responding to reports or removing content, though we aim to respond promptly.</p>
+
+  <h2>8. Account Suspension and Termination</h2>
+
+  <h3>Suspension</h3>
+  <p>AniSpotter may suspend your account if you:</p>
+  <ul>
+    <li>Violate these Terms</li>
+    <li>Engage in harassment, threats, or abuse</li>
+    <li>Submit illegal content or spam</li>
+    <li>Disturb or harass wildlife in violation of local laws</li>
+    <li>Engage in behavior harmful to the community</li>
+  </ul>
+
+  <h3>Deletion After Suspension</h3>
+  <p>If your account is suspended, you must contact <strong>support@anispotter.app</strong> to request account deletion. Suspensions may be permanent.</p>
+
+  <h3>Your Right to Delete</h3>
+  <p>You can delete your account in-app at any time. Deletion:</p>
+  <ul>
+    <li>Permanently erases your account, profile, sightings, photos, and identification history</li>
+    <li>Is irreversible</li>
+    <li>Does not affect moderation audit logs (your account identifier may be retained)</li>
+  </ul>
+
+  <h2>9. Data Processors</h2>
+  <p>Your data is processed by:</p>
+  <ul>
+    <li><strong>Supabase</strong> — Database, authentication, storage</li>
+    <li><strong>Anthropic</strong> — Photo processing for species identification via Claude API</li>
+  </ul>
+  <p>These companies process data as described in our <a href="/privacy">Privacy Policy</a>.</p>
+
+  <h2>10. Disclaimer of Warranties</h2>
+  <p>AniSpotter is provided "as-is" and "as available." We make no warranties regarding:</p>
+  <ul>
+    <li>Availability or uninterrupted service</li>
+    <li>Accuracy of identifications</li>
+    <li>Safety of wildlife information</li>
+    <li>Freedom from errors or security threats</li>
+  </ul>
+  <p>Use the App at your own risk.</p>
+
+  <h2>11. Limitation of Liability</h2>
+  <p>To the maximum extent permitted by law, AniSpotter and its developers are not liable for:</p>
+  <ul>
+    <li>Indirect, incidental, special, or consequential damages</li>
+    <li>Lost profits or data</li>
+    <li>Harm resulting from user-submitted content</li>
+    <li>Misidentification of species</li>
+    <li>Mistakes in location data or privacy features</li>
+  </ul>
+  <p>This limitation applies even if we've been advised of the possibility of such damages.</p>
+
+  <h2>12. Indemnity</h2>
+  <p>You agree to indemnify and hold harmless AniSpotter, its developers, and its data processors from any claims, damages, or costs (including legal fees) arising from:</p>
+  <ul>
+    <li>Your use of the App</li>
+    <li>Your violation of these Terms</li>
+    <li>Your submitted content</li>
+    <li>Your infringement of anyone's rights</li>
+  </ul>
+
+  <h2>13. Privacy and Data Protection</h2>
+  <p>Your use of AniSpotter is governed by our <a href="/privacy">Privacy Policy</a>. By using the App, you consent to our collection, use, and disclosure of your data as described there.</p>
+
+  <h2>14. Third-Party Services</h2>
+  <p>AniSpotter relies on third-party services (Supabase, Anthropic). We are not responsible for their availability, security, or conduct. Check their privacy policies and terms of service.</p>
+  <p>We do not use advertising networks, analytics SDKs, or tracking pixels.</p>
+
+  <h2>15. Intellectual Property</h2>
+  <ul>
+    <li>AniSpotter's design, code, and branding are our intellectual property</li>
+    <li>You retain ownership of photos and content you submit</li>
+    <li>You grant us the license to use your content as described in Section 3</li>
+  </ul>
+
+  <h2>16. Changes to These Terms</h2>
+  <p>We may update these Terms at any time. Changes are effective when posted. Your continued use of the App after changes means you accept the updated Terms.</p>
+
+  <h2>17. Severability</h2>
+  <p>If any provision of these Terms is found invalid or unenforceable, that provision is severed, and the remaining Terms remain in effect.</p>
+
+  <h2>18. Governing Law and Dispute Resolution</h2>
+  <p><strong>Placeholder:</strong> These Terms are governed by the laws of <mark>[JURISDICTION]</mark>, without regard to conflicts of law.</p>
+
+  <h3>Disputes</h3>
+  <p>Any dispute arising from these Terms or your use of AniSpotter shall be resolved by:</p>
+  <ul>
+    <li>Good-faith negotiation, OR</li>
+    <li>Binding arbitration, OR</li>
+    <li>Legal action in courts of <mark>[JURISDICTION]</mark></li>
+  </ul>
+  <p>(Select the dispute resolution method appropriate for your jurisdiction and business model.)</p>
+
+  <h2>19. Contact Us</h2>
+  <p>For questions, support, or concerns:</p>
+  <p><strong>Email:</strong> support@anispotter.app</p>
+</main>
+<footer>
+  <p>AniSpotter · support@anispotter.app · <a href="/">Back to home</a></p>
+</footer>
+</body>
+</html>

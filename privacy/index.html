@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — AniSpotter</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5a5a5a;
+    --link: #0a5fb0;
+    --border: #e2e2e2;
+    --mark-bg: #fff3a3;
+    --mark-fg: #1a1a1a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --fg: #eaeaea;
+      --muted: #a3a3a3;
+      --link: #6db4ff;
+      --border: #2c2f36;
+      --mark-bg: #7a6300;
+      --mark-fg: #fff6d1;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+    padding: 2.5rem 1.25rem 4rem;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.9rem;
+    margin-bottom: 0.25rem;
+    line-height: 1.25;
+  }
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--border);
+  }
+  h3 {
+    font-size: 1.05rem;
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    margin: 0.9rem 0;
+  }
+  ul {
+    margin: 0.9rem 0;
+    padding-left: 1.4rem;
+  }
+  li {
+    margin: 0.35rem 0;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  a {
+    color: var(--link);
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  mark {
+    background: var(--mark-bg);
+    color: var(--mark-fg);
+    padding: 0.05em 0.3em;
+    border-radius: 3px;
+    font-weight: 600;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 3rem 0 1.5rem;
+  }
+  footer {
+    max-width: 680px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  footer a {
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="updated"><strong>Last updated: August 3, 2026</strong></p>
+
+  <h2>Introduction</h2>
+  <p>AniSpotter is a wildlife-spotting app that helps users identify animal species and share sightings with the community. This privacy policy explains what data we collect, how we use it, and your rights regarding your information.</p>
+  <p>We are committed to protecting your privacy. If you have questions, please contact us at <strong>support@anispotter.app</strong>.</p>
+
+  <h2>Data We Collect</h2>
+
+  <h3>Account Information</h3>
+  <p>When you create an account, we collect:</p>
+  <ul>
+    <li>Email address</li>
+    <li>Username</li>
+    <li>Password (encrypted)</li>
+    <li>Profile data (points, streaks)</li>
+  </ul>
+  <p>You can sign in via email/password, Sign in with Apple, or Google sign-in through Supabase Auth.</p>
+
+  <h3>Photos and Sightings</h3>
+  <p>When you submit a wildlife sighting, we collect:</p>
+  <ul>
+    <li>Photo (uploaded to our server)</li>
+    <li>Species identified</li>
+    <li>Timestamp</li>
+    <li>Location coordinates (optional, from manual entry or photo EXIF data only)</li>
+    <li>User who submitted the sighting</li>
+  </ul>
+  <p><strong>Location privacy:</strong> Exact coordinates are stored server-side but never shown to other users. Our public map displays fuzzed (coarsened) coordinates only. Sensitive species are further coarsened or hidden from the public map.</p>
+  <p><strong>Home Privacy Zone:</strong> You can mark a home privacy zone on your device. Sightings within this zone are never uploaded to our servers and never appear on the public map.</p>
+
+  <h3>Identification Data</h3>
+  <p>When you submit a photo for species identification, we send it (along with optional location and date context) to Anthropic's Claude API. We log:</p>
+  <ul>
+    <li>Photo hash</li>
+    <li>Identification candidates returned</li>
+    <li>Token usage</li>
+  </ul>
+  <p>These logs help us improve our identification service.</p>
+
+  <h3>Usage Events</h3>
+  <p>We collect basic usage data to understand how the app is used and maintain service quality (e.g., identification attempt counts, errors, feature engagement).</p>
+
+  <h2>How We Use Your Data</h2>
+  <ul>
+    <li><strong>Authentication:</strong> To create and maintain your account</li>
+    <li><strong>Species Identification:</strong> To identify wildlife in your photos via Claude API</li>
+    <li><strong>Sightings:</strong> To display sightings on the public map and in leaderboards (with fuzzed coordinates and your username/points visible)</li>
+    <li><strong>Social Features:</strong> To enable friend requests by username and public profile visibility</li>
+    <li><strong>Moderation:</strong> To detect and respond to inappropriate content and abuse</li>
+    <li><strong>Service Improvement:</strong> To analyze identification logs and fix bugs</li>
+  </ul>
+
+  <h2>Data Processors</h2>
+  <p>Your data is processed by:</p>
+  <ul>
+    <li><strong>Supabase</strong> — Hosts our database, authentication, and file storage</li>
+    <li><strong>Anthropic</strong> — Processes photos sent for species identification via Claude API</li>
+  </ul>
+  <p>These processors act as data processors under our instructions and maintain appropriate safeguards.</p>
+
+  <h2>Free Tier and Usage Limits</h2>
+  <p>AniSpotter offers a free tier limited to <strong>10 identifications per month</strong>, enforced server-side. This limit applies to photo submissions for species identification.</p>
+
+  <h2>Data Retention</h2>
+  <ul>
+    <li><strong>Account data:</strong> Retained while your account is active. Upon deletion, your account, profile, sightings, photos, and identification history are permanently erased.</li>
+    <li><strong>Identification logs:</strong> Retained for service improvement (photo hash, candidates, token counts). These are separate from user account data and may be retained longer for analytics.</li>
+    <li><strong>Moderation records:</strong> If your account is suspended or removed, an audit log of moderation actions may retain your account identifier.</li>
+  </ul>
+
+  <h2>Account Deletion</h2>
+  <p>You can delete your account in-app at any time. This permanently erases:</p>
+  <ul>
+    <li>Your account and login credentials</li>
+    <li>Your profile (username, points, streaks)</li>
+    <li>All sightings you submitted</li>
+    <li>All photos you uploaded</li>
+    <li>Your identification history</li>
+  </ul>
+  <p><strong>Suspended accounts:</strong> If your account is suspended for violating our terms, you must contact support@anispotter.app to request account deletion.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>AniSpotter is not directed to children under 13. We do not knowingly collect personal information from children under 13. If we become aware that a child under 13 has provided us with information, we will delete that information and terminate the child's account.</p>
+
+  <h2>Your Privacy Rights</h2>
+  <p>Depending on your location, you may have rights including:</p>
+  <ul>
+    <li>Access to your personal data</li>
+    <li>Correction of inaccurate data</li>
+    <li>Deletion of your data (see Account Deletion above)</li>
+    <li>Opt-out of certain uses</li>
+  </ul>
+  <p>To exercise these rights, contact <strong>support@anispotter.app</strong>. We will respond within 30 days or provide a timeline for response.</p>
+
+  <h2>Security</h2>
+  <p>We encrypt data in transit and at rest. However, no security measure is 100% effective. You are responsible for keeping your password confidential.</p>
+
+  <h2>Third Parties</h2>
+  <p>We do not sell, share, or rent your data to third parties. Supabase and Anthropic process data only as described above.</p>
+  <p>We do not use advertising networks, analytics SDKs, or tracking pixels.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this policy at any time. Changes will be posted here with a new "Last updated" date. Continued use of AniSpotter after changes means you accept the updated policy.</p>
+
+  <h2>Contact Us</h2>
+  <p>If you have questions or concerns about this privacy policy, please contact:</p>
+  <p><strong>support@anispotter.app</strong></p>
+</main>
+<footer>
+  <p>AniSpotter · support@anispotter.app · <a href="/">Back to home</a></p>
+</footer>
+</body>
+</html>
